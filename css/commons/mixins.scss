@@ -1,0 +1,14 @@
+@mixin info_paragraph{
+	text-align: center;
+}
+@mixin users_info($font_weigth, $font_size){
+	font-size: $font_size;
+	font-weight: $font_weigth;
+}
+@mixin center_block{
+	display: flex;
+	justify-content: center;
+}
+@mixin width_block($width){
+	width: $width;
+}
