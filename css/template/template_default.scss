@@ -1,15 +1,39 @@
-.container .header .nav-tabs .nav-item .active,
-.container .header .nav-tabs .nav-item .active i{
-	color: $color_purple;
-	border:0;
-}
-.container .header .nav-tabs .nav-link,
-.container .header .nav-tabs .nav-link i{
 
-	color: $color_text;
-}
+body{
+	.header{
+		background-color: #fff;
+		.navbar::after, .navbar::before{
+			display: none;
+		}
+		.bg-light{
+			--bs-bg-opacity: 0;
 
-.container .header .nav-tabs .nav-item .dropdown-toggle::after{
-	content: "";
-	display: none;
+			.nav-tabs{
+				font-weight: $menu_weight;
+				border: none;
+				.nav-item{
+
+					.dropdown-toggle::after{
+						content: "";
+						display: none;
+					}
+
+					.nav-link{
+						color: $color_text;
+						border:0;
+					}
+
+					.nav-link:hover{
+					color: $color_purple;
+					border: 0;
+					}
+					
+					.active{
+						color: $color_purple;
+						border:0;
+					}	
+				}	
+			}
+		}
+	}
 }
