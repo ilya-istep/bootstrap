@@ -1,3 +1,15 @@
-body{
-	background-color: $color1;
+.container .header .nav-tabs .nav-item .active,
+.container .header .nav-tabs .nav-item .active i{
+	color: $color_purple;
+	border:0;
+}
+.container .header .nav-tabs .nav-link,
+.container .header .nav-tabs .nav-link i{
+
+	color: $color_text;
+}
+
+.container .header .nav-tabs .nav-item .dropdown-toggle::after{
+	content: "";
+	display: none;
 }
