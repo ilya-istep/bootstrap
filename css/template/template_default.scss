@@ -1,3 +1,40 @@
+
+@import url('../css/bootstrap-icons.css');
+
 body{
+	font-size: $base_font_size;
 	background-color: $color1;
 }
+
+
+.btn-primary{
+	background-color:$color2;
+	border-color: transparent;
+}
+.sweatch{
+	background-color:#fff;
+
+	.sweatch_feald{
+		float: none; 
+		margin-left: 0em;
+		height: 1.7em;
+		width: 3.5em;
+		margin:0 10px;
+
+		&:checked{
+			background-color:$color2;
+		}
+	}
+	.form-switch{
+		margin-bottom: 0;
+	}
+}
+.btn_buy{
+	margin-left:20px;
+	i{
+		margin-right: 5px;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+}
+
