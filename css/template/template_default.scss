@@ -1,38 +1,119 @@
 
 body{
+
 	.header{
 		background-color: #fff;
+		position: fixed;
+		margin-left: 0;
+		padding: 8 0;
 		.navbar::after, .navbar::before{
 			display: none;
 		}
+
+		.navbar{
+			.container-fluid{
+				padding-left: 0;
+
+				.navbar-brand{
+					font-weight: $menu_weight;
+					font-size: 25px;
+				}
+			}
+		}
+
 		.bg-light{
 			--bs-bg-opacity: 0;
 
-			.nav-tabs{
-				font-weight: $menu_weight;
-				border: none;
-				.nav-item{
+		.nav-tabs{
+			font-weight: $menu_weight;
+			font-size: 17px;
+			border: none;
+			margin-left: -10px;
+			.nav-item{
 
-					.dropdown-toggle::after{
-						content: "";
-						display: none;
-					}
+				.dropdown-toggle::after{
+					content: "";
+					display: none;
+				}
 
-					.nav-link{
-						color: $color_text;
-						border:0;
-					}
+				.nav-link{
+					color: $color_text;
+					border:0;
+				}
 
-					.nav-link:hover{
+				.nav-link:hover{
 					color: $color_purple;
 					border: 0;
-					}
-					
-					.active{
-						color: $color_purple;
-						border:0;
+				}
+							
+				.active{
+					color: $color_purple;
+					border:0;
 					}	
 				}	
+				.dropdown{
+
+					.dropdown-menu{
+						border: 0;
+						border-radius: 5%;
+						padding: 0;
+						width: max-content;
+						color: $color_text;
+						overflow: hidden;
+						.row{
+							margin: 0;
+
+						}
+						.dropdown-subtitle{
+							font-weight: 700;
+						}
+						.dropdown-subtitle:hover{
+							font-weight: 700;
+							color: #000;
+						}
+						span{
+							padding: 0;
+						}
+						
+						.dropdown-item{
+							padding-left: 5px;
+							a:hover{
+								color: $color_purple;
+							border: 0;
+							}
+						}
+
+						.dropdown-item:hover{
+							
+							background-color: #fff;
+
+						}
+						.last_in_col{
+							padding-bottom: 30px;
+						}
+					}
+					.picture-col{
+						background-image: url("../images/landings.jpg");
+						background-size: cover;
+						
+					}
+					.first-col{
+						ul{
+							padding-left: 15px;
+						}	
+					}
+					.other-col{
+						ul{
+							padding-left: 20px;
+						}
+					}
+					.last-col{
+						ul{
+							padding-right: 130px;
+						}
+					}
+
+				}
 			}
 		}
 	}
