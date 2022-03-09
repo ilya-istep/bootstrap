@@ -4,8 +4,9 @@
 
 .wrapper_for_sign_in_form{
 	font-size: $font_size_login_text;
-	h1{
-		font-size: 4rem;
+	h1.welcom_text_h1{
+		font-size: 3.5rem;
+		margin-bottom: 16px;
 	}
 	.link_reg{
 		color: $colorlink1;
@@ -13,12 +14,17 @@
 	a{
 		font-size: $font_size_login_text;
 	}
+	i{
+		font-size: $font_size_awesome_fonts_netw_forms;
+	}
 	form{
 		input{
 			font-size: $font_size_login_text;
+			padding: 7px 0;
 		}
 		.input_password{
 			@include block_relative;
+
 			.not_eyes_btn_password{
 				@include btn_eyes_password;
 			}
@@ -36,13 +42,10 @@
 		.btn_sign_in{
 			@include color_btn1;
 			font-size: $fontsizebtns;
+			border-radius: $border_radius_btn_sign_in_forms;
 		}
 		.btn_sign_in:hover{
 			background-color: $colorbtnhover1;
-		}
-		.forgot_password_link{
-			color: $colorlink1;
-			font-size: $fontsizebtns;
 		}
 		.not_eyes_btn_password{
 			@include btn_eyes_password;
@@ -55,20 +58,19 @@
 		right: 1%;
 		height: 1.5px;
 		background-color: #e2e5f1;
-		margin: 10px 0;
+		margin: 24px 0;
 	}
 	.h6_text_sign_nw{
 		font-size: $font_size_login_text;
+		margin-bottom: 24px !important;
 	}
 	.sign_networks_btns{
 		.btn_sign_google{
 			margin-right: 20px;
 			@include btn_sign_network;
-			font-size: $fontsizebtns;
 		}
 		.btn_sign_facebook{
 			@include btn_sign_network;
-			font-size: $fontsizebtns;
 		}
 		.btn_sign_facebook:hover{
 			background-color: #1877f2;

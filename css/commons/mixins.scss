@@ -118,14 +118,20 @@
 @mixin btn_eyes_password{
 	position: absolute;
 	right: 1%;
-	top: 55%;
+	top: 53%;
 	bottom: 0;
 	color: #555;
 }
+@mixin padding_btn_sign_in_page{
+	padding: 10px 20px;
+}
 @mixin btn_sign_network{
+	font-size: $fontsizebtns;
+	@include padding_btn_sign_in_page;
 	background-color: $colorbtnNW;
-	width: 40%;
+	width: 50%;
 	background-color: #eff2fc;
 	color: #3e4265;
+	border-radius: $border_radius_btn_sign_in_forms;
 }
 //Mixins for Sign_In page are ending!!!(login.html)
