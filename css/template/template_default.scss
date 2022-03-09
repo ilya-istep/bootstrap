@@ -1,3 +1,45 @@
 body{
 	background-color: $color1;
 }
+
+.form-main{
+	.mb-1{
+	margin-right: 30px;
+	}
+	.btn-form-main{
+		display: flex;
+		
+	}
+	.btn_1{
+		margin-right: 20px;
+		.cencel_btn{
+			background-color: $color2;
+			border: none;
+			color: #000;
+		}
+		.cencel_btn:hover{
+			background-color: $color3;
+		}
+	}
+	.btn_2{
+		.save_btn{
+			background-color: $color4;
+			border: none;
+		}
+		.save_btn:hover{
+			background-color: $color5;
+		}
+	}
+	.current_form{
+		position: relative;
+	}
+	.form_btn_eye{
+		position: absolute;
+		z-index: 1;
+		left: 390px;
+		bottom: 7px;
+		border: none;
+		background-color: #fff;
+	}
+}
+
