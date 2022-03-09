@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 html{
 	font-size: 10px;
@@ -5,53 +6,77 @@ html{
 body{
 	background-color: $color1;
 }
-.sidebar_wrap{
-	font-family: 'Manrope', sans-serif;
-	background-color: $color_backgroud1;
-	@include center_block();
+.sidebar_block{
+	width: 100%;
+	margin-bottom: 3rem;
 
-	.photo_and_info{
-		@include width_block(40%);
+	.sidebar_user_info_wrap{
+		font-family: 'Manrope', sans-serif;
+		background-color: $color_sidebar_backgroud;
+		@include center_block_sidebar();
 
-		.photo_wrap{
-			position: relative;
+		.photo_and_info{
+			@include width_block_sidebar(16rem, 4rem);
 
-			.photo{				
-				img{
-					display: block;
-					border-radius: 50%;
-					width: 100%;
-					height: auto;
-				}
-				.link{
-					display: flex;
-					width: 3rem;
-					height: 3rem;
-					align-items: center;
-					justify-content: center;
-					background-color: $color_backgroud2;
-					position: absolute;
-					top: 80%;
-					left: 70%;
-					border-radius: 50%;
+			.photo_wrap{
+				position: relative;
 
-					a{
-						text-decoration: none;
-						color: $color_sidebar_font2;
+				.photo{
+					
+					@include user_photo_block_sidebar(1rem);
+					
+					.link{
+						@include link_change_picture_sidebar(3.6rem, 3.6rem, 70%, 70%);
 					}
 				}
 			}
-		}
-		.info{
-			.user_name{
-				@include info_paragraph();
-				@include users_info(400, 1.6rem);
-				color: $color_sidebar_font1;
+			.info{
+				.user_name{
+					@include info_paragraph_sidebar();
+					@include users_info_sidebar(800, 2rem, 1rem);
+					color: $color_sidebar_font_user_name;
+				}
+				.user_email{
+					@include info_paragraph_sidebar();
+					@include users_info_sidebar(400, 1.8rem, 0.5rem);
+					color: $color_sidebar_font_user_email;
+				}
 			}
-			.user_email{
-				@include info_paragraph();
-				@include users_info(200, 1.4rem);
-				color: $color_sidebar_font2;
+		}
+	}
+	.sidebar_menu_wrap{
+		@include menu_gaps_sidebar(2rem);
+		font-family: 'Manrope', sans-serif;
+
+		.collapsing,
+		.show{
+			padding-top: 2rem;
+			transition: 0.2s;
+		}
+
+		.sidebar_menu_button{
+			@include closed_menu_button_sidebar(1.4rem, 1.6rem, 0.7rem);
+		
+			.disable_button{
+				display: none;
+			}
+			.sidebar_icon_before{
+				@include icon_sidebar(0, .3rem);
+			}
+			.sidebar_icon_after{
+				@include icon_sidebar(.3rem, 0);
+				font-size: 1.2rem;
+			}
+		}
+		.sidebar_menu_button:focus{
+			box-shadow: none;
+		}
+
+		.sidebar_menu{
+			@include menu_sidebar(95%, 1.6rem, 600);
+
+			.sidebar_menu_items{
+				@include items_menu_sidebar();
 			}
 		}
 	}
