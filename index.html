@@ -9,90 +9,127 @@
 	<link rel="stylesheet" href="css/bundle.css">
 </head>
 <body>
-	<div class="sidebar_block">
-		<div class="sidebar_user_info_wrap">
-			<div class="photo_and_info">
-				<div class="photo_wrap">
-					<div class="photo">
-						<img src="images/18.jpg">
-						<div class="link">
-							<a href="#">
-								<i class="fas fa-sync"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="info">
-					<div class="user_name">
-						John Doe
-					</div>
-					<div class="user_email">
-						jonny@email.com
-					</div>
-				</div>
-			</div>
-		</div>
+
+	<div class="container-fluid fixed_block">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 sidebar_menu_wrap">
-					<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-						<div class="container-fluid">
-							<button class="navbar-toggler sidebar_menu_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-								<span class=" disable_button navbar-toggler-icon"></span>
-								<i class=" sidebar_icon_before bi bi-person-lines-fill"></i>
-								Account menu
-								<i class="sidebar_icon_after bi bi-chevron-down"></i>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-								<ul class="navbar-nav sidebar_menu me-auto mb-2 mb-lg-0 flex-column">
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-gear"></i>
-										Account Details</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link active_item sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-lock"></i>
-										Security</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-bell"></i>
-										Notifications</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-chat-right"></i>
-										Messages</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-bookmark"></i>
-										Saved Items</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-collection"></i>
-										My Collections</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-credit-card-2-front"></i>
-										Payment Details</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link sidebar_menu_items" href="#">
-										<i class="sidebar_icon bi bi-box-arrow-left"></i>
-										Sign Out</a>
-									</li>
-								</ul>
-							</div>
+				<div class="col-6">
+					<!-- лого и меню -->
+				</div>
+				<div class="col-6 d-flex justify-content-end d-flex align-items-center">
+					<div class="sweatch">
+						<div class="form-check form-switch">
+							<label class="form-check-label align-self-center" for="flexSwitchCheckChecked">Light</label>
+						  	<input class="form-check-input sweatch_feald" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+						  	<label class="form-check-label align-self-center" for="flexSwitchCheckChecked">Dark</label>
 						</div>
-					</nav>
+					</div>
+					<button type="button" class="btn btn-primary btn_buy"><i class="bi bi-cart"></i>Buy now</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<aside class="col-4 sidebar">
+				<div class="sidebar_block">
+					<div class="sidebar_user_info_wrap">
+						<div class="photo_and_info">
+							<div class="photo_wrap">
+								<div class="photo">
+									<img src="images/18.jpg">
+									<div class="link">
+										<a href="#">
+											<i class="fas fa-sync"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="info">
+								<div class="user_name">
+									John Doe
+								</div>
+								<div class="user_email">
+									jonny@email.com
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 sidebar_menu_wrap">
+								<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+									<div class="container-fluid">
+										<button class="navbar-toggler sidebar_menu_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+											<span class=" disable_button navbar-toggler-icon"></span>
+											<i class=" sidebar_icon_before bi bi-person-lines-fill"></i>
+											Account menu
+											<i class="sidebar_icon_after bi bi-chevron-down"></i>
+										</button>
+										<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+											<ul class="navbar-nav sidebar_menu me-auto mb-2 mb-lg-0 flex-column">
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-gear"></i>
+													Account Details</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link active_item sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-lock"></i>
+													Security</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-bell"></i>
+													Notifications</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-chat-right"></i>
+													Messages</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-bookmark"></i>
+													Saved Items</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-collection"></i>
+													My Collections</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-credit-card-2-front"></i>
+													Payment Details</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link sidebar_menu_items" href="#">
+													<i class="sidebar_icon bi bi-box-arrow-left"></i>
+													Sign Out</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="col-8">
+				<!-- основной контент страницы -->
+			</div>
+
+
+	<footer class="container-fluid footer">
+		<div class="container">
+			<div class="row">
+				<!-- footer -->
+			</div>
+		</div>
+	</footer>
+
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
