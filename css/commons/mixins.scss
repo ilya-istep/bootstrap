@@ -10,8 +10,14 @@
 } 
 @mixin btn_eyes_password{
 	position: absolute;
-	right: 2%;
+	right: 3%;
 	top: 55%;
 	bottom: 0;
 	color: #555;
+}
+@mixin btn_sign_network{
+	background-color: $colorbtnNW;
+	width: 40%;
+	background-color: #eff2fc;
+	color: #3e4265;
 }

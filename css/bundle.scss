@@ -42,12 +42,12 @@
 .switch_eyes_password:hover .eyes_btn_password{
 	display: block;
 }
-.btn_sign_network{
-	background-color: $colorbtnNW;
-	width: 40%;
-}
 .btn_sign_google{
 	margin-right: 20px;
+	@include btn_sign_network;
+}
+.btn_sign_facebook{
+	@include btn_sign_network;
 }
 .btn_sign_facebook:hover{
 	background-color: #1877f2;
