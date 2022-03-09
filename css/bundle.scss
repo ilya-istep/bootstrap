@@ -41,6 +41,7 @@
 		}
 		.btn_sign_in{
 			@include color_btn1;
+			margin-bottom: 16px;
 			font-size: $fontsizebtns;
 			border-radius: $border_radius_btn_sign_in_forms;
 		}
