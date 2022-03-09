@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bundle.css">
 </head>
 <body>
-	
 	<div class="container-fluid fixed_block">
 		<div class="container">
 			<div class="row">
@@ -32,7 +32,44 @@
 	<div class="container">
 		<div class="row">
 			<aside class="col-6 sidebar">
-				<!-- сайтбар -->
+				<h1 class="text-center">Welcome Back</h1>
+	<p class="text-center pb-3 mb-3">
+		Don’t have an account yet?
+		<a class="link_reg" href="account-signup.html">Register here.</a>
+	</p>
+	<form>
+		<div class="mb-3 container-flude">
+			<label for="exampleInputEmail1" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		</div>
+		<div class="mb-3 input_password">
+			<label for="exampleInputPassword1" class="form-label">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1">
+			<div class="switch_eyes_password">
+				<div class="eyes_btn_password">
+					<i class="fa-solid fa-eye"></i>
+				</div>
+				<div class="not_eyes_btn_password">
+					<i class="fa-solid fa-eye-slash"></i>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="mb-3 form-check">
+			<input type="checkbox" class="form-check-input" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">Remember me</label>
+		</div>
+		<button type="submit" class="btn btn-primary btn_sign_in">Sign in</button>
+	</form>
+	<a href="#" class="btn btn-link btn-lg w-100 forgot_password_link">Forgot your password?</a>
+	<script src="js/bootstrap.min.js"></script>
+	<div class="horizontal_line_under_forms"></div>
+	<h6 class="text-center mb-4">Or sign in with your social network</h6>
+	<div class="sign_networks_btns container-fluid d-flex justify-content-center">
+		<button type="button " class="btn btn-light btn_sign_network btn_sign_google"><i class="fa-brands fa-google"></i> Google</button>
+		<button type="button" class="btn btn-light btn_sign_network btn_sign_facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+	</div>
 			</aside>
 			<div class="col-6">
 				<!-- основной контент страницы -->

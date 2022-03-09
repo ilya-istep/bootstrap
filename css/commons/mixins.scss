@@ -1,3 +1,4 @@
+
 @mixin width_block_sidebar($width, $padding){
 	width: $width;
 	padding-top: $padding; 
@@ -98,4 +99,27 @@
 }
 @mixin icon_sidebar($pdngLeft, $pdngRight){
 	padding: 0 $pdngRight 0 $pdngLeft;
+}
+@mixin color_btn1{
+	position: relative;
+	left: 1%;
+    right: 1%;
+	background-color: $colorbtn1;
+	width: 98%;
+}
+@mixin block_relative{
+	position: relative;
+} 
+@mixin btn_eyes_password{
+	position: absolute;
+	right: 3%;
+	top: 55%;
+	bottom: 0;
+	color: #555;
+}
+@mixin btn_sign_network{
+	background-color: $colorbtnNW;
+	width: 40%;
+	background-color: #eff2fc;
+	color: #3e4265;
 }
