@@ -1,3 +1,105 @@
+
+@mixin width_block_sidebar($width, $padding){
+	width: $width;
+	padding-top: $padding; 
+}
+@mixin user_photo_block_sidebar($padding){
+	padding: 0 $padding;
+
+	img{
+		display: block;
+		border-radius: 50%;
+		width: 100%;
+		height: auto;
+		}
+}
+@mixin link_change_picture_sidebar($width, $height, $top, $left){
+	display: flex;
+	width: $width;
+	height: $height;
+	align-items: center;
+	justify-content: center;
+	background-color: $color_sidebar_backgroud;
+	position: absolute;
+	top: $top;
+	left: $left;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid $color_sidebar_border_change_photo; 
+
+	a{
+		text-decoration: none;
+		color: $color_sidebar_font_change_photo;
+	}
+}
+@mixin info_paragraph_sidebar{
+	text-align: center;
+}
+@mixin users_info_sidebar($font_weigth, $font_size, $padding){
+	font-size: $font_size;
+	font-weight: $font_weigth;
+	padding-top: $padding;
+}
+@mixin center_block_sidebar{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+@mixin menu_gaps_sidebar($padding){
+	padding-top: $padding;
+}
+@mixin closed_menu_button_sidebar($padding, $fontSize, $brdrRadius){
+	background-color: $color_sidebar_backgroud_menu_button;
+	border: none;
+	width: 100%;
+	padding: $padding 0;
+	color: $color_sidebar_font_menu_button;
+	font-size: $fontSize;
+	font-weight: 600;
+	border-radius: $brdrRadius;
+}
+@mixin menu_sidebar($width, $fontSize, $fontWeight){
+	width: $width;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+}
+@mixin items_menu_sidebar{
+	&{
+		margin-bottom: 0.2rem;
+	}
+
+	width: 100%;
+	padding: 1rem;
+	background-color: transparent;
+	border-radius: 1rem;
+
+	.sidebar_icon{
+		@include icon_sidebar(0, 1rem);
+		color: $color_sidebar_font_nav_icons_not_active;
+	}
+	&:hover .sidebar_icon{
+		color: $color_sidebar_font_nav_icons_hover;
+
+	}
+	&.active_item .sidebar_icon{
+		color: $color_sidebar_font_nav_icons_active;
+	}
+
+	&:hover{
+		background-color: $color_sidebar_background_nav_elements_hover;
+		color: $color_sidebar_font_nav_not_active_hover;
+		transition: .5s;
+	}
+	&.active_item{
+		background-color: $color_sidebar_background_nav_elements_active;
+		color: $color_sidebar_font_nav_active;
+		box-shadow: 0 1rem 1.5rem $color_sidebar_background_nav_elrements_active_shadow;
+	}
+
+}
+@mixin icon_sidebar($pdngLeft, $pdngRight){
+	padding: 0 $pdngRight 0 $pdngLeft;
+}
 @mixin color_btn1{
 	position: relative;
 	left: 1%;
