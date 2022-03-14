@@ -121,67 +121,86 @@ body{
 }
 
 
-.users{
-	font-family: 'Manrope', sans-serif;
-	 .item{
-	 	margin-bottom: 20px;
-		i{
-			color:$color2;
-			padding: 5px;
-			background-color: $color_grey;
-			text-align: center;
-		}
-		
-		.computers{
-			p{
-				// line-height: 12px;
-				margin-bottom: 5px;
+.connections{
+	padding: 0;
+	.users{
+		font-family: 'Manrope', sans-serif;
+		 .item{
+		 	margin-bottom: 2rem;
+		 	padding: 0;
+			i{
+				color:$color2;
+				padding: 0.5rem;
+				background-color: $color_grey;
+				text-align: center;
 			}
-			span{
-				color: $color_span;
-				font-size: 14px;
-			}
-			span:nth-child(2)::after{
-				content: "|";
-			}
-			.active{
-				padding: 2px;
-				border-radius: 3px;
-				background-color: $color_active;
-				color: $textcolorhover;
-				font-weight: 500;
-				box-shadow: 0 4px 6px 1px rgba(0,0,0,0.1);
-			}
-		}
-		.button_wrap{
-			.btn_delete{
-				display: flex;
-				border: 1px solid $color_btn_hover;
-				color: $color3;
-				font-size: 1.6rem;
-				i{
-					color: $color3;
-					background-color: transparent;
+			
+			.computers{
+				p{
+					// line-height: 12px;
+					margin-bottom: 0.5rem;
+				}
+				span{
+					color: $color_span;
+					font-size: 1.4rem;
+				}
+				span:nth-child(2)::after{
+					content: "|";
+				}
+				.active{
+					padding: 0.2rem;
+					border-radius: 0.3rem;
+					background-color: $color_active;
+					color: $textcolorhover;
+					font-weight: 500;
+					box-shadow: 0 0.4rem 0.6rem 0.1rem rgba(0,0,0,0.1);
 				}
 			}
-			.btn_delete:hover{
-				background-color: $color_btn_hover;
-				color: $color_black;
+			.button_wrap{
+				width: 100%;
+				.btn_delete{
+					display: flex;
+					border: 0.1rem solid $color_btn_hover;
+					color: $color3;
+					font-size: 1.6rem;
+					height: 4rem;
+					width: 100%;
+					border-radius: 0.8rem;
+					// padding: 1rem;
+					i{
+						color: $color3;
+						background-color: transparent;
+					}
+					p{
+						font-size: 1.4rem;
+					}
+				}
+				.btn_delete:hover{
+					background-color: $color_btn_hover;
+					color: $color_black;
+				}
+				.btn_delete:hover i{
+					color: $color_black;
+				}
 			}
-			.btn_delete:hover i{
-				color: $color_black;
+		}
+		
+	}
+	.row_title{
+		
+		.title{
+			padding: 0;
+			h3{
+				color: $color2;
+				
+			}
+		}
+		.wrap_article{
+			padding: 0;
+			p{
+				color: $color3;
 			}
 		}
 	}
-	
-}
-.row .title{
-	h3{
-		color: $color2;
-	}
-}
-.row .article{
-	color: $color3;
-
 }
 
