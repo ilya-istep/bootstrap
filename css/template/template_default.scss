@@ -136,25 +136,32 @@ body{
 			}
 			
 			.computers{
+				
 				p{
 					// line-height: 12px;
 					margin-bottom: 0.5rem;
 				}
-				span{
-					color: $color_span;
-					font-size: 1.4rem;
+				.description{
+					display: flex;
+					span{
+						color: $color_span;
+						font-size: 1.4rem;
+						margin-left: 1rem;
+					}
+					span:nth-child(2){
+						border-left: 0.1rem solid $color_span;
+						height: 2.5rem;
+					}
+					.active{
+						padding: 0.2rem;
+						border-radius: 0.3rem;
+						background-color: $color_active;
+						color: $textcolorhover;
+						font-weight: 500;
+						box-shadow: 0 0.4rem 0.6rem 0.1rem rgba(0,0,0,0.1);
+					}
 				}
-				span:nth-child(2)::after{
-					content: "|";
-				}
-				.active{
-					padding: 0.2rem;
-					border-radius: 0.3rem;
-					background-color: $color_active;
-					color: $textcolorhover;
-					font-weight: 500;
-					box-shadow: 0 0.4rem 0.6rem 0.1rem rgba(0,0,0,0.1);
-				}
+				
 			}
 			.button_wrap{
 				width: 100%;
